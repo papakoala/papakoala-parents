@@ -124,47 +124,65 @@
         </div>
     </section>
 
-<section class="bg-brandBeige py-24 rounded-[3rem] mx-4 md:mx-6">
-        <div class="max-w-6xl mx-auto px-6">
+<section class="bg-brandBeige py-24 mx-4 md:mx-6 rounded-[3rem] overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
             
-            <div class="text-center mb-16">
+            <div class="text-center mb-20">
                 <span class="text-brandIndigo font-bold tracking-wide uppercase text-sm">Tu compañero diario</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-brandDark mt-3">3 Pasos. 5 Minutos. Magia diaria.</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-brandDark mt-3 tracking-tight">3 Pasos. Magia diaria.</h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-[2rem] shadow-soft hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                    <img src="assets/icon-descubre.png" alt="Icono Descubre" class="w-24 h-24 mb-6 object-contain hover:scale-105 transition-transform duration-300">
-                    <h3 class="font-bold text-xl mb-3 text-brandDark">Descubre</h3>
-                    <p class="text-gray-500 leading-relaxed">
-                        Abre la app y encuentra la actividad perfecta para el momento actual de tu bebé. Personalizado a su edad.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-[2rem] shadow-soft hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                    <img src="assets/icon-aprende.png" alt="Icono Aprende" class="w-24 h-24 mb-6 object-contain hover:scale-105 transition-transform duration-300">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="space-y-12">
+                    
+                    <div class="flex gap-6 items-start group">
+                        <div class="flex-shrink-0">
+                            <img src="assets/icon-descubre.png" alt="Icono Descubre" class="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 text-brandDark">Descubre</h3>
+                            <p class="text-gray-500 leading-relaxed text-lg">
+                                Olvida las búsquedas eternas. Encuentra la actividad perfecta para el momento exacto de tu bebé.
+                            </p>
+                        </div>
+                    </div>
 
-                    <h3 class="font-bold text-xl mb-3 text-brandDark">Aprende</h3>
-                    <p class="text-gray-500 leading-relaxed">
-                        Mira un vídeo de 1 minuto. Sin paja. Entiende el "qué" y el "por qué" de la neurociencia al instante.
-                    </p>
+                    <div class="flex gap-6 items-start group">
+                        <div class="flex-shrink-0">
+                            <img src="assets/icon-aprende.png" alt="Icono Aprende" class="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 text-brandDark">Aprende</h3>
+                            <p class="text-gray-500 leading-relaxed text-lg">
+                                Vídeos de 1 minuto. Sin teoría aburrida. Entiende la neurociencia detrás del juego al instante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start group">
+                        <div class="flex-shrink-0">
+                            <img src="assets/icon-conecta.png" alt="Icono Conecta" class="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 text-brandDark">Conecta</h3>
+                            <p class="text-gray-500 leading-relaxed text-lg">
+                                Guarda el móvil. El juego es vuestro. Crea vínculos seguros sin pantallas de por medio.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="bg-white p-8 rounded-[2rem] shadow-soft hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                    <img src="assets/icon-conecta.png" alt="Icono Conecta" class="w-24 h-24 mb-6 object-contain hover:scale-105 transition-transform duration-300">
-                    <h3 class="font-bold text-xl mb-3 text-brandDark">Conecta</h3>
-                    <p class="text-gray-500 leading-relaxed">
-                        Guarda el móvil. El juego es para vosotros dos. Disfruta de la conexión real sin pantallas de por medio.
-                    </p>
+
+                <div class="relative mt-12 lg:mt-0 flex justify-center lg:justify-end">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white blur-[120px] opacity-60 rounded-full -z-10 mix-blend-overlay"></div>
+                    
+                    <img src="assets/mockup-iphone.png" 
+                         class="relative z-10 w-full max-w-[360px] drop-shadow-2xl hover:scale-[1.02] transition-transform duration-700 ease-out" 
+                         alt="App PapaKoala en iPhone">
                 </div>
+
             </div>
-
-<div class="mt-24 relative mx-auto max-w-[320px] md:max-w-[380px] group">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brandIndigo blur-[90px] opacity-40 group-hover:opacity-50 transition-opacity -z-10"></div>
-    
-    <img src="assets/mockup-iphone.png" 
-         class="relative z-10 mx-auto block transform group-hover:scale-105 transition-transform duration-500 drop-shadow-2xl" 
-         alt="Interfaz de la app PapaKoala en iPhone">
-</div>
-
         </div>
     </section>
 
