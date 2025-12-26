@@ -8,7 +8,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <script>
+        // 1. Detectar el idioma del navegador
+        var userLang = navigator.language || navigator.userLanguage; 
+        
+        // 2. Comprobar si es inglés
+        // Y ADEMÁS comprobar que el usuario NO viene ya de la página en inglés (document.referrer)
+        // Esto evita que si alguien clica en "ES" desde la versión inglesa, lo volvamos a escupir al inglés.
+        if (userLang.startsWith('en') && !document.referrer.includes('/en/')) {
+            window.location.href = '/en/';
+        }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
