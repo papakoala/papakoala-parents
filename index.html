@@ -68,20 +68,38 @@
 </head>
 <body class="bg-white text-brandDark font-sans antialiased selection:bg-brandIndigo selection:text-white">
 
+No, ahí no. ✋
+
+Si lo pones justo después de <body> y antes de <nav>, te saldrá flotando arriba del todo, fuera de la barra de menú, y romperá el diseño alineado.
+
+Tienes que meterlo DENTRO del contenedor de los enlaces, justo antes de "Acceso Escuelas".
+
+Aquí tienes el bloque <nav> completo y corregido. Copia y pega todo este bloque sustituyendo a tu <nav> actual:
+
+HTML
+
     <nav class="w-full py-6 px-6 max-w-6xl mx-auto flex justify-between items-center z-50 relative">
         <div class="flex items-center gap-3 transition hover:opacity-80">
             <img src="assets/app-icon.png" alt="Logo PapaKoala" class="w-12 h-12 rounded-[1rem] shadow-lg shadow-brandIndigo/20 hover:scale-105 transition-transform duration-300">
             <span class="font-bold text-xl text-brandDark tracking-tight">PapaKoala</span>
         </div>
+        
         <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500 items-center">
+            
+            <div class="flex items-center gap-3 mr-2 font-bold text-sm border-r border-gray-200 pr-6">
+                <a href="/" class="text-brandDark hover:text-brandIndigo transition-colors opacity-100">ES</a>
+                <span class="text-gray-300">|</span>
+                <a href="en/" class="text-gray-400 hover:text-brandIndigo transition-colors hover:opacity-100">EN</a>
+            </div>
             <a href="https://escuelas.papakoala.com" class="hover:text-brandIndigo transition-colors duration-200">
                 Acceso Escuelas
             </a>
-<a href="https://apps.apple.com/es/app/papakoala-desarrollo-del-beb%C3%A9/id1540490806" 
-   target="_blank" 
-   class="bg-brandBeige text-brandIndigo px-5 py-2.5 rounded-full hover:bg-brandIndigo hover:text-white transition-all duration-300 font-bold">
-    Descargar App
-</a>
+            
+            <a href="https://apps.apple.com/es/app/papakoala-desarrollo-del-beb%C3%A9/id1540490806" 
+               target="_blank" 
+               class="bg-brandBeige text-brandIndigo px-5 py-2.5 rounded-full hover:bg-brandIndigo hover:text-white transition-all duration-300 font-bold">
+                Descargar App
+            </a>
         </div>
     </nav>
 
