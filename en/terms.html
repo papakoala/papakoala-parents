@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | PapaKoala</title>
+    <meta name="robots" content="noindex">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐨</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBeige: '#F8F4EB',
+                        brandIndigo: '#5D6EC0',
+                        brandDark: '#2D3748',
+                    },
+                    fontFamily: {
+                        sans: ['ui-rounded', 'SF Pro Rounded', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                    },
+                    typography: (theme) => ({
+                        DEFAULT: {
+                            css: {
+                                color: theme('colors.brandDark'),
+                                li: {
+                                    marginTop: '0.5em',
+                                    marginBottom: '0.5em',
+                                },
+                            },
+                        },
+                    }),
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandBeige text-brandDark font-sans antialiased selection:bg-brandIndigo selection:text-white">
+
+    <nav class="w-full py-8 px-6 max-w-4xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2 hover:opacity-70 transition group">
+            <span class="text-2xl group-hover:-translate-x-1 transition-transform">←</span>
+            <span class="font-bold text-brandIndigo">Back to Home</span>
+        </a>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 pb-32">
+        
+        <header class="mb-16 border-b border-brandIndigo/20 pb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brandIndigo mb-6 tracking-tight">Terms and Conditions</h1>
+            <p class="text-base text-gray-500 font-medium bg-white/50 inline-block px-4 py-2 rounded-full">
+                Last updated: <strong>January 1, 2026</strong>
+            </p>
+        </header>
+
+        <div class="prose prose-lg prose-slate max-w-none 
+                    prose-headings:text-brandIndigo prose-headings:font-bold 
+                    prose-p:text-gray-600 prose-p:leading-relaxed
+                    prose-li:text-gray-600 prose-li:marker:text-brandIndigo
+                    prose-a:text-brandIndigo hover:prose-a:text-opacity-80">
+            
+            <p class="lead text-xl font-medium text-brandDark mb-10">
+                Welcome to PapaKoala. These terms govern your use of our application and website. By downloading or using the app, you automatically agree to these ground rules.
+            </p>
+
+            <h3>1. Acceptable Use</h3>
+            <p>
+                PapaKoala grants you a personal, non-exclusive, non-transferable license to use the application on your Apple devices.
+            </p>
+            <ul class="my-6 space-y-2">
+                <li>The app is for personal and domestic use (parents and families).</li>
+                <li>You may not copy, modify, distribute, sell, or reverse engineer any part of our application.</li>
+                <li>The content (videos, guides, texts) is the intellectual property of PapaKoala and is protected by copyright.</li>
+            </ul>
+
+            <h3 class="mt-12">2. Medical Disclaimer</h3>
+            <div class="bg-white p-8 rounded-3xl border-l-4 border-brandIndigo shadow-sm my-6">
+                <p class="mb-4 text-brandDark font-bold">⚠️ IMPORTANT: READ CAREFULLY</p>
+                <p class="m-0 text-gray-600">
+                    PapaKoala is an <strong>information and entertainment</strong> tool. We are not doctors or therapists.
+                    <br><br>
+                    <strong>The use of this application does not replace professional medical advice.</strong> If you have any doubts about your child's development, or if you notice any delay or health issue, consult your pediatrician immediately. Do not use this app to self-diagnose developmental problems.
+                    <br><br>
+                    PapaKoala is not responsible for injuries or damages resulting from performing the proposed activities. You, as a parent/guardian, are responsible for ensuring a safe environment during play.
+                </p>
+            </div>
+
+            <h3 class="mt-12">3. Subscriptions and Payments (Apple)</h3>
+            <p>
+                Some features of PapaKoala require a paid subscription ("PapaKoala Premium").
+            </p>
+            <ul class="space-y-3">
+                <li><strong>Managed by Apple:</strong> All transactions are processed through your Apple ID account. We do not store your payment data.</li>
+                <li><strong>Auto-renewal:</strong> The subscription will automatically renew 24 hours before the current period ends, unless you turn off auto-renewal in your Apple Account Settings.</li>
+                <li><strong>Cancellation:</strong> You can cancel your subscription at any time from your iPhone/iPad settings. The cancellation will take effect at the end of the current billing period.</li>
+                <li><strong>Refunds:</strong> Apple exclusively handles all refund requests. PapaKoala does not have the technical or legal ability to issue direct refunds; you must request them from Apple Support.</li>
+            </ul>
+
+            <h3 class="mt-12">4. Accounts and Security</h3>
+            <p>
+                Since PapaKoala operates with a "Local-First" approach and syncs via iCloud, you are responsible for the security of your device and your Apple ID account. If you lose access to your Apple account, you may lose access to the data saved in the app.
+            </p>
+
+            <h3 class="mt-12">5. Changes to Service</h3>
+            <p>
+                We strive to improve the app constantly. We reserve the right to add, modify, or remove features in future updates. Likewise, we may update these terms; continued use of the app implies acceptance of the new terms.
+            </p>
+
+            <h3 class="mt-12">6. Limitation of Liability</h3>
+            <p>
+                To the maximum extent permitted by applicable law, PapaKoala shall not be liable for indirect, incidental, or consequential damages arising from the use or inability to use the application.
+            </p>
+
+            <h3 class="mt-12">7. Governing Law</h3>
+            <p>
+                These terms are governed by the laws of <strong>Spain</strong>. Any dispute related to these terms will be submitted to the jurisdiction of the courts of Madrid, Spain.
+            </p>
+
+            <div class="mt-20 pt-10 border-t border-brandIndigo/10">
+                <p class="text-base font-medium">For support or questions about these terms:<br> <a href="mailto:hola@papakoala.com" class="font-bold">hola@papakoala.com</a></p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
